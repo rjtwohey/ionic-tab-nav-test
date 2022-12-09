@@ -12,7 +12,8 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Tab 3 page" />
+      <!-- <ExploreContainer name="Tab 3 page" /> -->
+      <ModalView name="Tab 3 page" />
     </ion-content>
   </ion-page>
 </template>
@@ -20,10 +21,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+// import ExploreContainer from '@/components/ExploreContainer.vue';
+import ModalView from '@/components/ModalView.vue';
 
 export default defineComponent({
   name: 'Tab3Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, ModalView }
 });
 </script>
